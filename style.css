@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1a1a2e;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: linear-gradient(150deg, #4a00e0, #8e2de2, #ffc371);
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: yellow !important;
+}
+
+.btn {
+  background-color: #ff2e63;
+  border: 1px solid #ff2e63;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3bceac;
+  color: white !important;
+  border-color: #3bceac;
+}
+
+.hero-section {
+  margin-top: 100px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section div {
+  background: #27293d;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-boxes {
+  width: 75%;
+  margin: auto;
+  height: 40vh;
+}
+
+.about-section div:hover {
+  background: #3bceac;
+  transform: translateY(-5px);
+}
+
+.about-section h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff2e63, #3bceac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+.card-wrapper {
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.card {
+  background: #0a192f; 
+  color: #fff;
+  border: 1px solid #112240;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.3); 
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #ff9f1c; 
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #64ffda; 
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #d3d3d3; 
+}
+
+.btn-custom {
+  background-color: #ff9f1c; 
+  color: #0a192f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #ff6f00; 
+  color: #fff;
+}
+
+.progress {
+  height: 25px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  transition: width 1.5s ease-in-out;
+}
+.json-bar {
+  background-color: #ffcc00 !important; 
+  color: black; 
+  width: 0%;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Custom Colors for skill bar*/
+.html-bar {
+  background: linear-gradient(90deg, #ff8c00, #ff4500);
+} /* Orange */
+.css-bar {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+} /* Blue */
+.js-bar {
+  background: linear-gradient(90deg, #f7df1e, #dcce74);
+  color: black;
+} /* Yellow */
+.bootstrap-bar {
+  background: linear-gradient(90deg, #5606eb, #8c50e7);
+} /* Purple */
+.json-bar {
+  background: linear-gradient(
+    90deg,
+    #e0ac00,
+    #b8860b
+  ); /* Darker Yellow */
+  color: white;
+}
+
+
+
+.contact-section {
+  background: #0a192f; 
+  padding: 50px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #64ffda; 
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #112240; 
+  color: white; 
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #1a2a4a;
+  border-left: 3px solid #64ffda;
+  color: white;
+}
+
+.btn-custom {
+  background-color: #ff9f1c;
+  color: #0a192f;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ff6f00;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+  .card-wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col-12.col-md-6.col-lg-4 {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  .card img {
+    height: auto;
+    max-height: 200px;
+  }
+}
